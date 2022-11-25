@@ -171,8 +171,7 @@ class Car:
 cur = __name__
 if cur == "__main__":
     # checking keys
-    search = CarSearch(state = "pa", city = "bellefonte", zip_ = "16823",
-                       make = "ford", maxPrice = 25000, maxMileage = 50000,
+    search = CarSearch(make = "ford", maxPrice = 25000, maxMileage = 50000,
                        searchRadius = "500", requestID = "all-cars")
     search.search()
     for x in search.results:
